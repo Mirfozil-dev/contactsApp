@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #eceff4;
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+}
+
+.add_block {
+    width: 320px;
+    height: 250px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+.add_block button {
+    width: 97px;
+    height: 40px;
+    background: #4d59a1;
+    border-radius: 4px;
+    color: #ffffff;
+    border: none;
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.add_block input {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #eeeeee;
+    border-radius: 4px;
+    padding-left: 17px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.contacts_block {
+    width: 320px;
+    background: #ffffff;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.contacts_block__item, .contacts_block__title {
+    width: 100%;
+    height: 60px;
+    border-bottom: solid #eeeeee 1px;
+    padding: 0 26px 0 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacts_block__item_header {
+    display: flex;
+    align-items: center;
+}
+.contacts_block__item_header button {
+    width: 7px;
+    height: 7px;
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.contacts_block__item:last-child {
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+}
+.contacts_block__item p:last-child {
+    color: #666666;
+}
+.alert {
+    width: 320px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    z-index: 0;
+    opacity: 0;
+    transition: .3s;
+}
+.alert.active {
+    z-index: 1;
+    opacity: 1;
+}
+.alert.red {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.alert.green {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
